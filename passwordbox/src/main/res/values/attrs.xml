@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PasswordView">
+        <attr name="pwdViewLineWidth" format="dimension" />
+        <attr name="pwdViewCorners" format="dimension" />
+        <attr name="pwdBackgroundColor" format="color" />
+        <attr name="pwdChosenColor" format="color" />
+        <attr name="pwdNormalBorderColor" format="color" />
+        <attr name="pwdTextSize" format="dimension" />
+    </declare-styleable>
+</resources>
