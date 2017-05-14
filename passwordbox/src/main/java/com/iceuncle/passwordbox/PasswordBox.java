@@ -23,7 +23,7 @@ import android.widget.TextView;
  * Created by tianyang on 2017/4/27.
  */
 
-public class PasswordView extends RelativeLayout {
+public class PasswordBox extends RelativeLayout {
     private EditText editText;
     private TextView[] textViews;
     private View[] dividerViews;
@@ -51,15 +51,15 @@ public class PasswordView extends RelativeLayout {
     private int textSize;
 
 
-    public PasswordView(Context context) {
+    public PasswordBox(Context context) {
         this(context, null);
     }
 
-    public PasswordView(Context context, AttributeSet attrs) {
+    public PasswordBox(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public PasswordView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public PasswordBox(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
         chosenColor = ContextCompat.getColor(context, R.color.password_chosen_color);
@@ -72,7 +72,7 @@ public class PasswordView extends RelativeLayout {
     }
 
     private void initCustomAttrs(Context context, AttributeSet attrs) {
-        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.PasswordView);
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.PasswordBox);
         final int N = typedArray.getIndexCount();
         for (int i = 0; i < N; i++) {
             initCustomAttr(typedArray.getIndex(i), typedArray);
@@ -82,17 +82,17 @@ public class PasswordView extends RelativeLayout {
 
     private void initCustomAttr(int attr, TypedArray typedArray) {
 
-        if (attr == R.styleable.PasswordView_pwdViewLineWidth) {
+        if (attr == R.styleable.PasswordBox_pwdViewLineWidth) {
             lineWidth = typedArray.getDimensionPixelSize(attr, lineWidth);
-        } else if (attr == R.styleable.PasswordView_pwdViewCorners) {
+        } else if (attr == R.styleable.PasswordBox_pwdViewCorners) {
             corners = typedArray.getDimensionPixelSize(attr, corners);
-        } else if (attr == R.styleable.PasswordView_pwdBackgroundColor) {
+        } else if (attr == R.styleable.PasswordBox_pwdBackgroundColor) {
             backgroundColor = typedArray.getColor(attr, backgroundColor);
-        } else if (attr == R.styleable.PasswordView_pwdChosenColor) {
+        } else if (attr == R.styleable.PasswordBox_pwdChosenColor) {
             chosenColor = typedArray.getColor(attr, chosenColor);
-        } else if (attr == R.styleable.PasswordView_pwdNormalBorderColor) {
+        } else if (attr == R.styleable.PasswordBox_pwdNormalBorderColor) {
             normalBorderColor = typedArray.getColor(attr, normalBorderColor);
-        } else if (attr == R.styleable.PasswordView_pwdTextSize) {
+        } else if (attr == R.styleable.PasswordBox_pwdTextSize) {
             textSize = typedArray.getDimensionPixelSize(attr, textSize);
             Log.d("qqq", "textSize  " + textSize);
         }
