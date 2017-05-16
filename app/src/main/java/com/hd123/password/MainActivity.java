@@ -13,11 +13,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final PasswordBox passwordView = (PasswordBox) findViewById(R.id.password_view);
-        passwordView.setInputCompleteListener(new PasswordBox.InputCompleteListener() {
+        final PasswordBox passwordBox = (PasswordBox) findViewById(R.id.password_view);
+        passwordBox.setInputCompleteListener(new PasswordBox.InputCompleteListener() {
             @Override
             public void inputComplete() {
-                Log.d("qqq", "密码：  " + passwordView.getStrPassword());
+                Log.d("qqq", "密码：  " + passwordBox.getStrPassword());
             }
         });
     }

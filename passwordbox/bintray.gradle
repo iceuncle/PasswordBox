@@ -83,7 +83,7 @@ bintray {
     publish = true
 
     pkg {
-        repo = 'PasswordBox'  //仓库名
+        repo = 'maven'  //仓库名
         name = PROJ_NAME
         licenses = ['Apache-2.0']
         vcsUrl = PROJ_VCSURL
