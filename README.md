@@ -1,5 +1,5 @@
 # PasswordBox
-a password widget for pay suports round corners and chosen color.
+a password widget suports round corners and chosen color.
 
 ![](http://upload-images.jianshu.io/upload_images/4824158-e026efbddb861bd3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -37,3 +37,11 @@ dependencies {
             }
         });
   ```
+  
+### introduction
+pwdBackgroundColor 背景色  background
+pwdChosenColor  选中色     chosen color
+pwdNormalBorderColor 默认边框色   default border color
+pwdTextSize  圆点字体大小   dot font size
+pwdViewCorners  圆角大小   round coner size 
+pwdViewLineWidth  边框线宽  border line width
