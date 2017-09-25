@@ -14,8 +14,8 @@
         app:pwdBackgroundColor="#FFFFFF"
         app:pwdChosenColor="#ff9c09"
         app:pwdNormalBorderColor="#c3c3c3"
-        app:pwdTextSize="25sp"
+        app:pwdTextSize="16sp"
         app:pwdViewCorners="6dp"
-        app:pwdViewLineWidth="1dp" />
+        app:pwdViewLineWidth="3dp" />
 
 </RelativeLayout>

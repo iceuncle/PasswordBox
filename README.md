@@ -13,7 +13,7 @@ dependencies {
 
 ### Usage
 
-```
+```Java
     <com.iceuncle.passwordbox.PasswordBox
         android:id="@+id/password_view"
         android:layout_width="240dp"
@@ -25,10 +25,11 @@ dependencies {
         app:pwdTextSize="25sp"
         app:pwdViewCorners="6dp"
         app:pwdViewLineWidth="1dp" />
- ```
- 
- Get password
- ```
+```
+
+**Get password**
+
+ ```Java
  final PasswordBox passwordBox = (PasswordBox) findViewById(R.id.password_view);
         passwordBox.setInputCompleteListener(new PasswordBox.InputCompleteListener() {
             @Override
@@ -36,12 +37,18 @@ dependencies {
                 Log.d("pwd", passwordBox.getStrPassword());
             }
         });
-  ```
-  
+ ```
+
 ### introduction
-* pwdBackgroundColor     背景色         background
-* pwdChosenColor         选中色         chosen color
-* pwdNormalBorderColor   默认边框色      default border color
-* pwdTextSize            圆点字体大小    dot font size
-* pwdViewCorners         圆角大小        round coner size 
-* pwdViewLineWidth       边框线宽        border line width
+
+```
+pwdBackgroundColor     背景色         background
+pwdChosenColor         选中色         chosen color
+pwdNormalBorderColor   默认边框色      default border color
+pwdTextSize            圆点字体大小    dot font size
+pwdViewCorners         圆角大小        round coner size 
+pwdViewLineWidth       边框线宽        border line width
+```
+
+
+
