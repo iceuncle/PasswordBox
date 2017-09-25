@@ -39,9 +39,9 @@ dependencies {
   ```
   
 ### introduction
-* pwdBackgroundColor 背景色  background
-* pwdChosenColor  选中色     chosen color
-* pwdNormalBorderColor 默认边框色   default border color
-* pwdTextSize  圆点字体大小   dot font size
-* pwdViewCorners  圆角大小   round coner size 
-* pwdViewLineWidth  边框线宽  border line width
+* pwdBackgroundColor     背景色         background
+* pwdChosenColor         选中色         chosen color
+* pwdNormalBorderColor   默认边框色      default border color
+* pwdTextSize            圆点字体大小    dot font size
+* pwdViewCorners         圆角大小        round coner size 
+* pwdViewLineWidth       边框线宽        border line width
