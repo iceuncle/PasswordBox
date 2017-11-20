@@ -38,6 +38,18 @@ dependencies {
             }
         });
  ```
+ 
+ **get EditText**
+ 
+ ```java
+ passwordBox.getEditText()
+ ```
+ 
+ **clear**
+ 
+ ```Java
+ passwordBox.clear()
+ ```
 
 ### introduction
 
