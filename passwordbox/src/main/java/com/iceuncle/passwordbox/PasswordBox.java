@@ -243,10 +243,10 @@ public class PasswordBox extends RelativeLayout {
                         strPassword = stringBuffer.toString();
                         if (stringBuffer.length() == PWD_LENGTH) {
                             //文字长度位6   则调用完成输入的监听
-                            stringBuffer.setLength(0);
-                            for (int i = 0; i < PWD_LENGTH; i++) {
-                                textViews[i].setText("");
-                            }
+//                            stringBuffer.setLength(0);
+//                            for (int i = 0; i < PWD_LENGTH; i++) {
+//                                textViews[i].setText("");
+//                            }
                             if (inputCompleteListener != null) {
                                 inputCompleteListener.inputComplete();
                             }
@@ -312,6 +312,8 @@ public class PasswordBox extends RelativeLayout {
         } else if (length == PWD_LENGTH - 1) {
             textViews[PWD_LENGTH - 1].setBackgroundDrawable(themeRightDrawable);
             dividerViews[length - 1].setBackgroundColor(chosenColor);
+        } else if (length == PWD_LENGTH) {
+
         } else {
             textViews[length].setBackgroundDrawable(themeMidDrawable);
             dividerViews[length - 1].setBackgroundColor(chosenColor);
@@ -352,4 +354,21 @@ public class PasswordBox extends RelativeLayout {
         editText.setText(content);
     }
 
+    public void clear( ) {
+        stringBuffer.setLength(0);
+        editText.setText("");
+        for (int i = 0; i < PWD_LENGTH; i++) {
+            textViews[i].setText("");
+        }
+        for (int i = 1; i < PWD_LENGTH - 1; i++) {
+            dividerViews[i].setBackgroundColor(normalBorderColor);
+        }
+        dividerViews[0].setBackgroundColor(chosenColor);
+        textViews[0].setBackgroundDrawable(themeLeftDrawable);
+        textViews[1].setBackgroundDrawable(normalMidDrawable);
+        textViews[2].setBackgroundDrawable(normalMidDrawable);
+        textViews[3].setBackgroundDrawable(normalMidDrawable);
+        textViews[4].setBackgroundDrawable(normalMidDrawable);
+        textViews[5].setBackgroundDrawable(normalRightDrawable);
+    }
 }
