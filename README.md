@@ -7,7 +7,7 @@ a password widget suports round corners and chosen color.
 
 ```
 dependencies {
-   compile 'com.iceuncle:passwordbox:1.1.2'
+   compile 'com.iceuncle:passwordbox:1.1.3'
 }
 ```
 
